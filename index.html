@@ -20,7 +20,7 @@
 				<div style="background-color: #333;
 				overflow: hidden; text-align: center;">
 					<h1 style="color:whitesmoke;">Melbourne Datathon - 2020 <h1>
-					<h4 style="color:whitesmoke; font-family: Verdana, Geneva, Tahoma, sans-serif;"><centre>This is a submission for Melbourne Datathon 2020 Insights category.</centre></h4>
+					<h4 style="color:whitesmoke; font-family: Verdana, Geneva, Tahoma, sans-serif;"><centre>This is team Duo submission for Melbourne Datathon 2020 Insights category.</centre></h4>
 				  </div>
 
 
@@ -30,10 +30,7 @@
 					<section class="banner style1 orient-left content-align-left image-position-right fullscreen onload-image-fade-in onload-content-fade-right">
 						<div class="content">
 							<h1>Electricity Demand Analysis: Insights into Unmapped Factors for Reliable Forecast during Uncertainty</h1>
-							<p class="major">In just a few months of time, COVID-19 has brought a significant change in the way people do business. During this period, a lot of people have experienced a change in their working habits and there has been a significant change observed in the economic activity in Australia. We attempt to detect this shift using electricity demand data as it is the most updated dataset currently available. The policymakers and electricity operators must adopt a cross-domain approach to assess and predict electricity demand. Here we attempt to integrate traditional weather data with data related to COVID-19 to discover patterns in the change in the demand for electricity during COVID-19.</p>
-							<ul class="actions stacked">
-								<li><a href="#first" class="button big wide smooth-scroll-middle">Get Started</a></li>
-							</ul>
+							<p class="major">In just a few months of time, COVID-19 has brought a significant change in the way people do business. During this period, a lot of people have experienced a change in their working habits and there has been a significant change observed in the economic activity in Australia. We attempt to detect this shift using electricity demand data as it is the most updated dataset currently available. The policymakers and electricity operators must adopt a cross-domain approach to assess and predict electricity demand during uncertainity. Here we attempt to integrate traditional weather data with data related to COVID-19 to discover patterns in the change in the demand for electricity during COVID-19.</p>
 						</div>
 						<div class="image">
 							<img src="images/gerrit.jpg" alt="" />
@@ -69,7 +66,7 @@ High demand change can be attributed to stricter restrictions in NSW. Although t
 								<p style="text-align: left;display: block;
 								margin-top: 1em;
 								margin-bottom: 1em; width: 100%;">To interpret the changes in electricity demand, we start by investigating two major factors, namely social distancing and public health. In Victoria, we used Melbourne Pedestrian count data to represent social distancing while in New South Wales, the same factor is represented by Google trend data of keywords related to daily outdoor activities performed by people. 
-The chosen keywords are; ‘Train’, ‘Event’, and ‘hotel’. Social Distancing is measured by calculating the inverse of cumulative counts. Figure 3: shows variations in time scales of different factors influencing electricity consumption during COVID -19. Electricity demand started dropping almost immediately after the government put restrictions in place. Following this, the number of new confirmed cases started increasing rapidly with a major spike observed on 3 March 2020. It is also observed that electricity demand started rising almost immediately after a decline in the number of confirmed cases and ease of restrictions. 
+The chosen keywords are; ‘Train’, ‘Event’, and ‘hotel’. Social Distancing is measured by calculating the inverse of cumulative counts. The below figure shows variations in time scales of different factors influencing electricity consumption during COVID -19 in the NSW region. Electricity demand started dropping almost immediately after the government put restrictions in place. Following this, the number of new confirmed cases started increasing rapidly with a major spike observed on 3 March 2020. It is also observed that electricity demand started rising almost immediately after a decline in the number of confirmed cases and ease of restrictions. 
 </p>
 						</div>
 						<!-- </section> -->
@@ -83,8 +80,8 @@ The chosen keywords are; ‘Train’, ‘Event’, and ‘hotel’. Social Dista
 						<!-- <h2>Factors represent temporal change</h2> -->
 							<p style="text-align: left;display: block;
 							margin-top: 1em;
-							margin-bottom: 1em; width: 100%;">In the above graph, NSW electricity demand shows an early decline with respect to increase in the number of confirmed cases of COVID-19. Further, electricity demand showcased a delayed rebound in comparison to social distance measures with respect to increase in number of COVID-19 confirmed cases. Considering these features, we are aimed at quantifying this multi-dimensional relationship by modelling change (predicted - actual) in electricity demand using a Vector Autoregressive Model (VAR). 
-Analysis of variance decomposition in VAR model indicates the percentage contribution of the above mentioned factors to change in electricity demand. In NSW, social distancing seems to account for significant proportion of the change in electricity demand during COVID months.</p>
+							margin-bottom: 1em; width: 100%;">In the above graph, electricity demand in NSW shows an early decline with respect to increase in the number of confirmed cases of COVID-19. Further, electricity demand showcased a delayed rebound in comparison to social distance measures with respect to increase in number of COVID-19 confirmed cases. Considering these features, we are aimed at quantifying this multi-dimensional relationship by modelling change (predicted - actual) in electricity demand using a Vector Autoregressive Model (VAR). 
+Analysis of variance decomposition in VAR model indicates the percentage contribution of the above mentioned factors to change in electricity demand. </p>
 					</div>
 					</section>
 
@@ -107,7 +104,7 @@ Analysis of variance decomposition in VAR model indicates the percentage contrib
 								<!-- <h2>Impulse Response Function</h2> -->
 									<p style="text-align: left;display: block;
 									margin-top: 1em;
-									margin-bottom: 1em; width: 100%;">In NSW social distancing seems to contribute much higher percentage over weather-related factors. Further, despite showing a larger contribution to the change in electricity demand during FEVD analysis, it is not necessary that the factor will provide high sensitivity in impulse response analysis. For instance, in NSW, the number of confirmed cases seems to contribute a significant share to the change in electricity demand but shows very little sensitivity to the change in electricity demand in impulse response analysis. This gives another useful insight that any measure alone cannot be used to assess the impact on change in electricity demand but both measures taken together will help to assess the influence.</p>
+									margin-bottom: 1em; width: 100%;">In NSW social distancing seems to contribute much higher percentage over weather-related factors. Also, social distancing seems to account for significant proportion of the change in electricity demand during COVID-19 months. However, despite showing a larger contribution to the change in electricity demand in FEVD analysis, it is not necessary that the factor will provide high sensitivity in impulse response analysis. For instance, in below figure, the number of confirmed cases seems to contribute a significant share to the change in electricity demand in NSW but shows very little sensitivity to the change in electricity demand in impulse response analysis. This gives another useful insight that any measure(FEVD or Impulse response) alone cannot be used to assess the impact on change in electricity demand but both measures taken together will help to assess the influence.</p>
 						</div>
 					</section>
 
